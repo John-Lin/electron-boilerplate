@@ -1,0 +1,28 @@
+{{#extend "layout"}}
+  {{#content "head" mode="append"}}
+  {{/content}}
+
+  {{#content "body"}}
+    <h1>About pages</h1>
+
+    <div class="mui-panel">
+      <i class="fa fa-magnet"></i>
+      <p>Aenean vehicula tortor a tellus porttitor, id elementum est tincidunt. Etiam varius odio tortor. Praesent vel pulvinar sapien. Praesent ac sodales sem. Phasellus id ultrices massa. Sed id erat sit amet magna accumsan vulputate eu at quam. Etiam feugiat semper imperdiet. Sed a sem vitae massa condimentum vestibulum. In vehicula, quam vel aliquet aliquam, enim elit placerat libero, at pretium nisi lorem in ex. Vestibulum lorem augue, semper a efficitur in, dictum vitae libero. Donec velit est, sollicitudin a volutpat quis, iaculis sit amet metus. Nulla at ante nec dolor euismod mattis cursus eu nisl.</p>
+      <p>Quisque interdum facilisis consectetur. Nam eu purus purus. Curabitur in ligula quam. Nam euismod ligula eu tellus pellentesque laoreet. Aliquam erat volutpat. Curabitur eu bibendum velit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc efficitur lorem sit amet quam porta pharetra. Cras ultricies pellentesque eros sit amet semper.</p>
+      <div class="mui-checkbox">
+        <label>
+          <input type="checkbox" value="">
+          Option one
+        </label>
+      </div>
+      <div class="mui--text-right">
+        <button class="mui-btn mui-btn--raised mui-btn--primary">Button</button>
+      </div>
+    </div>
+
+  {{/content}}
+
+  {{#content "foot" mode="prepend"}}
+    <script src="../public/js/about.js"></script>
+  {{/content}}
+{{/extend}}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.muicss.com/mui-latest/css/mui.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="../public/css/custom-style.css" rel="stylesheet" type="text/css" />
+
+    {{#block "head"}}
+    <title>{{title}}</title>
+    {{/block}}
+
+  </head>
+  <body>
+
+    <!-- Navigation sidebar -->
+    <div id="sidedrawer" class="mui--no-user-select">
+      <div id="sidedrawer-brand" class="mui--appbar-line-height mui--text-title">Brand.io</div>
+      <div class="mui-divider"></div>
+      <ul>
+        <li><a href="home.html"><strong><i class="fa fa-home"></i> Home</strong></a></li>
+        <li><a href="about.html"><strong><i class="fa fa-info-circle"></i> About</strong></a></li>
+        <li>
+          <strong>Category 1 <i class="fa fa-chevron-down"></i></strong>
+          <ul>
+            <li><a href="#">Item 1</a></li>
+            <li><a href="#">Item 2</a></li>
+            <li><a href="#">Item 3</a></li>
+          </ul>
+        </li>
+        <li>
+          <strong>Category 2</strong>
+          <ul>
+            <li><a href="#">Item 1</a></li>
+            <li><a href="#">Item 2</a></li>
+            <li><a href="#">Item 3</a></li>
+          </ul>
+        </li>
+        <li>
+          <strong>Category 3</strong>
+          <ul>
+            <li><a href="#">Item 1</a></li>
+            <li><a href="#">Item 2</a></li>
+            <li><a href="#">Item 3</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+
+    <!-- Header -->
+    <header id="header">
+      <div class="mui-appbar mui--appbar-line-height" id="appbar">
+        <div class="mui-container-fluid">
+          <a class="sidedrawer-toggle mui--visible-xs-inline-block js-show-sidedrawer"><i class="fa fa-bars"></i></a>
+          <a class="sidedrawer-toggle mui--hidden-xs js-hide-sidedrawer"><i class="fa fa-bars"></i></a>
+          <span class="mui--text-title mui--visible-xs-inline-block">Brand.io</span>
+        </div>
+      </div>
+    </header>
+
+
+    <!-- Content -->
+    <div id="content-wrapper">
+      <div class="mui--appbar-height"></div>
+      <div class="mui-container-fluid">
+        <br>
+        {{#block "body"}}
+        {{/block}}
+      </div>
+    </div>
+
+
+    <!-- Footer -->
+    <!-- <footer id="footer">
+      <div class="mui-container-fluid">
+        <br>
+        Made with ♥ by <a href="https://github.com/John-Lin">John-Lin</a>
+      </div>
+    </footer> -->
+
+
+    <script type="text/javascript">window.$ = window.jQuery = require('jquery');</script>
+    <script src="https://cdn.muicss.com/mui-0.2.1/js/mui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.js"></script>
+    <script src="../public/js/init.js"></script>
+    {{#block "foot"}}
+    {{/block}}
+  </body>
+</html>
